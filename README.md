@@ -6,13 +6,23 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 
 ## Making a plan
 
-1) **Make a drawing of your app. Simple "wireframes"**
-1) **Once you have a drawing, name the HTML elements you'll need to realize your vision**
-1) **For each HTML element ask: Why do I need this? (i.e., "we need div to display the results in")** 
-1) **Once we know _why_ we need each element, think about how to implement the "Why" as a "How" (i.e., `resultsEl.textContent = newResults`)**
-1) **Find all the 'events' (user clicks, form submit, on load etc) in your app. Ask one by one, "What happens when" for each of these events. Does any state change?**
-1) **Think about how to validate each of your features according to a Definition of Done. (Hint: console.log usually helps here.)**
-1) **Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.**
+HTML:
+1) set up initial page layout
+2) create a form
+3) add form elements (ingredient, amount, remove last ingredient, meal name, save meal)
+4) add other DOM elements (display current meal, display saved meals)
+
+Javascript:
+1) create renderIngredient test + function
+2) create renderMeal test + function
+3) grab DOM elements and initialize 
+4) let state of counters and arrays
+5) add event listeners for add ingredient, remove last ingredient, and add meal
+6) function to render to the DOM: current list of ingredients, saved meals
+
+CSS:
+1) layout for the elements 
+2) styling as needed
 
 Additional considerations:
 - Ask: which of your HTML elements need to be hard coded, and which need to be dynamically generated?
