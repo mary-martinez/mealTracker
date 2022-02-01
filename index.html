@@ -30,13 +30,31 @@
                         Amount
                         <input type="text" name="amount" id="amount" />
                     </label>
+                    <button id='add'>Add Ingredient</button>
                 </form>
-                <div class=""
+                <div id='ingredient-display'>
+                    <ul id='ingredient-list'>
+                        
+                    </ul>
+                    <button id='remove-last'>Remove Last Ingredient</button>
+                </div>
+            </div>
+            <div id="save-meal">
+                <label>
+                    Meal name:
+                    <input id="meal-name"/>
+                </label>
+                <button id="add-meal">Add Meal</button>
+            </div>
+            <div id="meals">
+                <ul id="saved-meals">
+                    
+                </ul>
             </div>
         </section>
     </main>
     <footer>
-        <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
+        <div class="copy gutter-right">&copy; 2022 Alchemy Code Lab</div>
     </footer>
 
     <script type="module" src="./app.js"></script>
