@@ -20,7 +20,7 @@
   "rules": {
     "eqeqeq": ["error", "always"],
     "no-console": "warn",
-    "indent": [
+    "indent": [ 
       "error",
       4,
       {
