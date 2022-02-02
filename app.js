@@ -31,6 +31,7 @@ function renderMeals() {
         const li = renderMeal(meal);
         listMeals.append(li);
     }
+
 }
 
 form.addEventListener('submit', (e) => {
@@ -61,4 +62,7 @@ mealSave.addEventListener('click', () => {
     }
     meals.push(meal);
     renderMeals();
+    mealName.value = '';
+    listIngredients.textContent = '';
+    ingredients = [];
 });
