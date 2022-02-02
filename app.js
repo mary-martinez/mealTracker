@@ -1,6 +1,6 @@
 // import functions and grab DOM elements
 
-import { renderIngredient, renderMeal } from "./utils.js";
+import { renderIngredient, renderMeal } from './utils.js';
 
 const form = document.getElementById('add-ingredient');
 const listIngredients = document.getElementById('ingredient-list');
@@ -59,7 +59,7 @@ mealSave.addEventListener('click', () => {
     const meal = {
         name: mealName.value,
         numOfIngredients: ingredients.length
-    }
+    };
     meals.push(meal);
     renderMeals();
     mealName.value = '';

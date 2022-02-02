@@ -1,7 +1,7 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
 
-import { renderIngredient, renderMeal } from "../utils.js";
+import { renderIngredient, renderMeal } from '../utils.js';
 
 const test = QUnit.test;
 
@@ -30,4 +30,4 @@ test('renderMeal should return an <li> that has the meal name and number of ingr
         numOfIngredients: 8
     });
     expect.equal(actual.outerHTML, expected);
-})
+});
