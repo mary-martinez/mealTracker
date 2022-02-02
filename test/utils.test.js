@@ -1,7 +1,7 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
 
-import { renderIngredients } from "../utils.js";
+import { renderIngredient } from "../utils.js";
 
 const test = QUnit.test;
 
@@ -12,7 +12,7 @@ test('renderIngredients should return at <li> that has the ingredient and amount
 
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = renderIngredients({
+    const actual = renderIngredient({
         type: 'banana',
         amount: 100,
         unit: 'g'

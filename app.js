@@ -1,13 +1,23 @@
 // import functions and grab DOM elements
 
-const form = document.getElementById('add-ingredient');
+import { renderIngredient } from "./utils.js";
 
+const form = document.getElementById('add-ingredient');
+const listIngredients = document.getElementById('ingredient-list');
 // let state
 let ingredients = [];
 // set event listeners 
 // get user input
 // use user input to update state 
 // update DOM to reflect the new state
+function renderIngredients(ingredients) {
+    listIngredients.textContent = '';
+    for (let ingredient of ingredients) {
+        const li = renderIngredient(ingredient);
+        listIngredients.append(li);
+    }
+}
+
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     // Step 1 - add code to track each submission to the ingredients
